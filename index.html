@@ -1,0 +1,154 @@
+<html>
+<body>
+    <div class="container">
+    <div>
+      <h1 class="title">Website Cost Calculator</h1>
+    </div>
+      <!-- Pagination Timeline 1-->
+      <div class="timeline-container">
+        <div class="timeline">
+          <div class="step active">
+            <span class="circle">1</span>
+            <span class="label">Basic Information</span>
+          </div>
+          <!-- Pagination Timeline 2 -->
+          <div class="line"></div>
+          <div class="step">
+            <span class="circle">2</span>
+            <span class="label">Select Features</span>
+          </div>
+          <!-- Pagination Timeline 3 -->
+          <div class="line"></div>
+          <div class="step">
+            <span class="circle">3</span>
+            <span class="label">Additional Services</span>
+          </div>
+          <!-- Pagination Timeline 4 -->
+          <div class="line"></div>
+          <div class="step">
+            <span class="circle">4</span>
+            <span class="label">Get Your Estimate</span>
+          </div>
+        </div>
+      </div>
+  
+      <!-- 1.Basic Information -->
+  
+      <div id="step-content">
+        <div class="step-content" id="step-1">
+          <h2>Are you looking for a new website or redesigning of an existing website?</h2>
+          <input type="radio" name="radio1">New website design 
+          <br>
+          <input type="radio" name="radio1">Redesign of an existing website
+  
+          <h2>How many pages do you need?</h2>
+          <select required>
+            <option value="1" selected>select number of pages</option>
+            <option value="1" >Single Page</option>
+            <option value="1">Up to 5 pages</option>
+            <option value="1">UP to 10 pages</option>
+            <option value="1">UP to 25 pages</option>
+            <option value="1">UP to 50 pages</option>
+            <option value="1">UP to 100 pages</option>  
+          </select>
+  
+          <h2 required>What style of UI/UX design do you prefer?</h2>
+          <input type="radio" name="radio2">Standard Design ()
+          <br>
+          <input type="radio" name="radio2">Advanced Design (₹₹)
+          <br>
+          <input type="radio" name="radio2">Custom UI/UX Design (₹₹₹) (100% Unique)
+          
+          <h2 required>Do you need eCommerce functionality on your website?</h2>
+          <input type="radio" name="radio2">No
+          <br>
+          <input type="radio" name="radio2">Yes, Standard eCommerce
+          <br>
+          <input type="radio" name="radio2">Yes, Shopify eCommerce
+        </div>
+  
+        <!-- 2.Select Features -->
+  
+        <div class="step-content hidden" id="step-2">
+          <h2>Select the basic features you want on your website</h2>
+          <input type="checkbox" name="radio3" required>Image Gallery <br>
+          <input type="checkbox" name="radio3">Video Gallery <br>
+          <input type="checkbox" name="radio3">Live Chat <br>
+          <input type="checkbox" name="radio3">whatsapp Chat <br>
+          <input type="checkbox" name="radio3">Simple Contact Form <br>
+          <input type="checkbox" name="radio3">Blog Functionality <br>
+          <input type="checkbox" name="radio3">Social Media <br>
+          <input type="checkbox" name="radio3">Analytics & Tracking <br>
+          <br>
+          <h2>Select the advanced features you want on your website</h2>
+          <input type="checkbox" name="radio4">None <br>
+          <input type="checkbox" name="radio4">Online Payment Gateway <br>
+          <input type="checkbox" name="radio4">Chat Bot/ Lead Bot <br>
+          <input type="checkbox" name="radio4">Content Management System (CMS) <br>
+          <input type="checkbox" name="radio4">Lead Generation & Management (CRM) <br>
+          <input type="checkbox" name="radio4">Custom Conversion Tracking(GTM) <br>
+          <input type="checkbox" name="radio4">Appointment Scheduling / Reservations <br>
+        </div>
+  
+        <!-- 3.Additional Services -->
+  
+        <div class="step-content hidden" id="step-3">
+          <h2>Do you need Content Writing services for your website?</h2>
+          <input type="radio" name="radio5">No, I'll provide the content <br>
+          <input type="radio" name="radio5">Yes, Up to 5 Pages (2500 Words) <br>
+          <input type="radio" name="radio5">Yes, Up to 10 Pages (5000 Words) <br>
+          <input type="radio" name="radio5">Yes, Up to 25 Pages (12500 Words) <br>
+          <h2>Do you need Stock Images for your website?</h2>
+          <input type="radio" name="radio5">No, I'll provide the images <br>
+          <input type="radio" name="radio5">Yes, Free stock images <br>
+          <input type="radio" name="radio5">Yes, Premium stock images <br>
+          <h2>Do you need Logo Design Service? </h2>
+          <input type="radio" name="radio5">No, I'll provide the Logo <br>
+          <input type="radio" name="radio5">Yes, Standard (Graphics Based) <br>
+          <input type="radio" name="radio5">Yes, Premium (Sketch Based)<br>
+          <h2>Do you need SEO services for your website? </h2>
+          <input type="radio" name="radio5">No <br>
+          <input type="radio" name="radio5">Yes, But SHO Setup Only <br>
+          <input type="radio" name="radio5">Yes, I Need SEO 6 Months Plan <br>
+        </div>
+  
+        <!-- 4.Your Estimation -->
+  
+        <div class="step-content hidden" id="step-2">
+          <h1>Your Estimate Is Ready</h1>
+          <p>Please provide your details in the fields below and
+             then proceed to click on the "Email my Estimate" button. 
+             A detailed estimate, based on the information you have provided, 
+             will be instantly sent to your email address</p>
+  
+        <label>Name</label> <br>
+        <input placeholder="Enter your Name">  
+        <br>
+        <label>Email</label> <br>
+        <input placeholder="Enter your Email">
+        <br>
+        <label>Phone</label> <br>
+        <input placeholder="Enter your Phone Number">
+        <br>
+        <label>Company Name</label> <br>
+        <input placeholder="Enter your Company Name">
+        <br>
+        <label>What is your role?</label> <br>
+        <input placeholder="Enter your job position">
+        <br>
+        <button class="estimate">Email my Estimate</button>
+        </div>
+  
+      </div>
+  
+      <!-- Navigation Buttons -->
+  
+      <div class="calculator-navigation">
+        <button id="prev-btn" class="disabled">Previous</button>
+        <button id="next-btn">Next</button>
+      </div>
+    </div>
+  
+    <script src="index.js"></script>
+  </body>
+  </html>
