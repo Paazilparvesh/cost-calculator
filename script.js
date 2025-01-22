@@ -60,3 +60,5 @@ prevBtn.addEventListener("click", () => {
 
 // Initialize
 updatePagination();
+
+
