@@ -4,107 +4,193 @@ body {
     margin: 0;
     padding: 0;
     background: #f9f9f9;
-  }
-  
-  .container {
-    width: 80%;
+    width: 100%;
+    height: 100%;
+
+}
+
+/* Basic Information   Step 1 */
+
+/* Step 1 Container */
+
+.container {
+    width: 100%;
     margin: auto;
     padding: 20px;
-  }
-  
-  .timeline-container {
+}
+
+/* heading for Website Cost Calculator */
+
+.header{
+  display: flex;
+  flex-direction: row; 
+  justify-content:center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.title{
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+}
+
+
+.selectable{
+  margin: 10px 10px 10px 30px;
+}
+
+
+input[type="radio"] {
+  accent-color: #B374ED;
+}
+
+
+select {
+  accent-color: #B374ED;
+  padding: 5px 0px 5px 5px;
+  margin-left: 30px;
+}
+
+/* Select Features        Step 2 */
+
+input[type="checkbox"] {
+  accent-color: #B374ED;
+}
+
+/* Email Estimation          Step 4 */
+
+.estimate_heading{
+  margin: 50px 0px 20px 0px ;
+  text-align: center;
+}
+
+.estimate_detail{
+  margin: 20px 0px 40px 0px ;
+  text-align: center;
+  padding: 0px 120px 0px 120px; 
+}
+
+.estimate_form{
+  padding: 10px 20px;
+  margin: 10px 0px 5px 0px;
+  width: 25%;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  font-size: 20px;
+}
+
+.estimate_form:focus{
+  outline:#cf9cff;
+  border: #cf9cff 2px solid;
+}
+
+#step-4{
+  text-align: center;
+}
+
+.estimate{
+  margin: 30px 0px 0px 0px;
+  width: 40%;
+  align-items: center;
+  font-size: 20px;
+}
+
+.timeline-container {
     margin: 20px 0;
-  }
+}
   
-  .timeline {
+.timeline {
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
     width: 100%;
-  }
+}
   
-  .step {
+.step {
+    align-items: center;
+    justify-content: center;
     text-align: center;
     position: relative;
     flex: 1;
-  }
+
+}
   
-  .step .circle {
-    width: 30px;
-    height: 30px;
+.step .circle {
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background: lightgray;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
+    margin: 20 auto;
     font-weight: bold;
     transition: background 0.3s, transform 0.3s;
-  }
+}
   
-  .step.active .circle {
-    background: #007bff;
+.step.active .circle {
+    background: #cf9cff;
     transform: scale(1.2);
-  }
+}
   
-  .step.completed .circle {
-    background: #28a745;
-  }
+.step.completed .circle {
+    background: #cf9cff;
+}
   
-  .step .label {
+.step .label {
     margin-top: 10px;
     font-size: 14px;
-  }
+}
   
-  .line {
+.line {
     height: 2px;
     flex: 1;
     background: lightgray;
     margin-top: 13px;
     transition: background 0.3s;
-  }
+}
   
-  .line.completed {
-    background: #28a745;
-  }
+.line.completed {
+    background: #cf9cff;
+}
   
-  .hidden {
+.hidden {
     display: none;
-  }
+}
   
-  .calculator-navigation {
+.calculator-navigation {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-  }
+}
   
-  button {
+button {
     padding: 10px 20px;
     border: none;
-    background: #007bff;
+    background: #cf9cff;
     color: white;
     border-radius: 4px;
     cursor: pointer;
     transition: background 0.3s;
-  }
+}
   
-  button:hover {
-    background: #0056b3;
-  }
+button:hover {
+    background: #cf9cff;
+}
   
-  button.disabled {
+button.disabled {
     background: #cccccc;
     cursor: not-allowed;
-  }
-   .title{
-    margin-top: 100px;
-    align-items: center;
-    text-align: center;
-    padding-bottom: 100px;
-   }
-   .estimate{
-    width: 90%;
-    align-items: center;
-   }
+}
+
+.content_box{
+  width: 100%;
+  border-radius: 15px;
+  padding: 20px 0px 20px 50px;
+  margin: 20px 10px 20px 10px;
+  background-color: #FAF5FE;
+}

@@ -5,8 +5,10 @@
 </head>
 <body>
   <div class="container">
-  <div>
+  <div class="header">
     <h1 class="title">Website Cost Calculator</h1>
+    <br>
+    <h3>Calculate Your Websire Cost</h3>
   </div>
     <!-- Pagination Timeline 1-->
     <div class="timeline-container">
@@ -40,16 +42,16 @@
 
     <div id="step-content">
       <div class="step-content" id="step-1">
-        <div>
+        <div class="content_box">
           <h2>Are you looking for a new website or redesigning of an existing website?</h2>
-          <p class="error-message" id="errorMessage">Please fill in all required fields.</p>
+          <!-- <p class="error-message" id="errorMessage">Please fill in all required fields.</p> -->
           <input type="radio" name="radio0" class="selectable" value="100">New website design 
           <br>
           <input type="radio" name="radio0" class="selectable" value="100">Redesign of an existing website
         </div>
-        <div>
+        <div class="content_box">
           <h2>How many pages do you need?</h2>
-          <p class="error-message" id="errorMessage">Please fill in all required fields.</p>
+          <!-- <p class="error-message" id="errorMessage">Please fill in all required fields.</p> -->
           <select required>
             <option class="selectable" selected>select number of pages</option>
             <option class="selectable" value="100" >Single Page</option>
@@ -60,18 +62,18 @@
             <option class="selectable" value="100">UP to 100 pages</option>  
           </select>
         </div>
-        <div>
+        <div class="content_box">
           <h2>What style of UI/UX design do you prefer?</h2>
-          <p class="error-message" id="errorMessage">Please fill in all required fields.</p>
+          <!-- <p class="error-message" id="errorMessage">Please fill in all required fields.</p> -->
           <input type="radio" name="radio1" class="selectable" value="100" >Standard Design ()
           <br>
           <input type="radio" name="radio1" class="selectable" value="100">Advanced Design (₹₹)
           <br>
           <input type="radio" name="radio1" class="selectable" value="100">Custom UI/UX Design (₹₹₹) (100% Unique)
         </div>
-        <div>  
+        <div class="content_box">  
           <h2>Do you need eCommerce functionality on your website?</h2>
-          <p class="error-message" id="errorMessage">Please fill in all required fields.</p>
+          <!-- <p class="error-message" id="errorMessage">Please fill in all required fields.</p> -->
           <input type="radio" name="radio2" class="selectable" value="100">No
           <br>
           <input type="radio" name="radio2" class="selectable" value="100">Yes, Standard eCommerce
@@ -83,9 +85,9 @@
       <!-- 2.Select Features -->
 
       <div class="step-content hidden" id="step-2">
-        <div>
+        <div class="content_box">
           <h2 aria-required="true">Select the basic features you want on your website</h2>
-          <p class="error-message" id="errorMessage">Please fill in all required fields.</p>
+          <!-- <p class="error-message" id="errorMessage">Please fill in all required fields.</p> -->
           <input type="checkbox" name="radio3" class="selectable" value="100" >Image Gallery <br>
           <input type="checkbox" name="radio3" class="selectable" value="100" >Video Gallery <br>
           <input type="checkbox" name="radio3" class="selectable" value="100" >Live Chat <br>
@@ -96,9 +98,9 @@
           <input type="checkbox" name="radio3" class="selectable" value="100" >Social Media <br>
           <input type="checkbox" name="radio3" class="selectable" value="100" >Analytics & Tracking <br>
         </div>
-        <div>
+        <div class="content_box">
           <h2>Select the advanced features you want on your website</h2>
-          <p class="error-message" id="errorMessage">Please fill in all required fields.</p>
+          <!-- <p class="error-message" id="errorMessage">Please fill in all required fields.</p> -->
           <input type="checkbox" name="radio4" class="selectable" value="100">None <br>
           <input type="checkbox" name="radio4" class="selectable" value="100">Online Payment Gateway <br>
           <input type="checkbox" name="radio4" class="selectable" value="100">Chat Bot/ Lead Bot <br>
@@ -112,31 +114,31 @@
       <!-- 3.Additional Services -->
 
       <div class="step-content hidden" id="step-3">
-        <div>
+        <div class="content_box">
           <h2>Do you need Content Writing services for your website?</h2>
-          <p class="error-message" id="errorMessage">Please fill in all required fields.</p>
+          <!-- <p class="error-message" id="errorMessage">Please fill in all required fields.</p> -->
           <input type="radio" name="radio5" class="selectable" value="100">No, I'll provide the content <br>
           <input type="radio" name="radio5" class="selectable" value="100">Yes, Up to 5 Pages (2500 Words) <br>
           <input type="radio" name="radio5" class="selectable" value="100">Yes, Up to 10 Pages (5000 Words) <br>
           <input type="radio" name="radio5" class="selectable" value="100">Yes, Up to 25 Pages (12500 Words) <br>
         </div>
-        <div>
+        <div class="content_box">
           <h2>Do you need Stock Images for your website?</h2>
-          <p class="error-message" id="errorMessage">Please fill in all required fields.</p>
+          <!-- <p class="error-message" id="errorMessage">Please fill in all required fields.</p> -->
           <input type="radio" name="radio6" class="selectable" value="100">No, I'll provide the images <br>
           <input type="radio" name="radio6" class="selectable" value="100">Yes, Free stock images <br>
           <input type="radio" name="radio6" class="selectable" value="100">Yes, Premium stock images <br>
         </div>
-        <div>
+        <div class="content_box">
           <h2>Do you need Logo Design Service? </h2>
-          <p class="error-message" id="errorMessage">Please fill in all required fields.</p>
+          <!-- <p class="error-message" id="errorMessage">Please fill in all required fields.</p> -->
           <input type="radio" name="radio7" class="selectable" value="100">No, I'll provide the Logo <br>
           <input type="radio" name="radio7" class="selectable" value="100">Yes, Standard (Graphics Based) <br>
           <input type="radio" name="radio7" class="selectable" value="100">Yes, Premium (Sketch Based)<br>
         </div>
-        <div>
+        <div class="content_box">
           <h2>Do you need SEO services for your website? </h2>
-          <p class="error-message" id="errorMessage">Please fill in all required fields.</p>
+          <!-- <p class="error-message" id="errorMessage">Please fill in all required fields.</p> -->
           <input type="radio" name="radio8" class="selectable" value="100">No <br>
           <input type="radio" name="radio8" class="selectable" value="100">Yes, But SHO Setup Only <br>
           <input type="radio" name="radio8" class="selectable" value="100">Yes, I Need SEO 6 Months Plan <br>
@@ -145,29 +147,29 @@
 
       <!-- 4.Your Estimation -->
 
-      <div class="step-content hidden" id="step-2">
-        <h1>Your Estimate Is Ready</h1>
-        <p>Please provide your details in the fields below and
+      <div class="step-content hidden" id="step-4">
+        <h1 class="estimate_heading">Your Estimate Is Ready</h1>
+        <p class="\estimate_detail">Please provide your details in the fields below and
            then proceed to click on the "Email my Estimate" button. 
            A detailed estimate, based on the information you have provided, 
            will be instantly sent to your email address</p>
 
-      <label>Name</label> <br>
-      <input placeholder="Enter your Name" type="text">  
+      <!-- <label>Name</label> <br> -->
+      <input class="estimate_form" placeholder="Enter your Name" type="text" required>  
       <br>
-      <label>Email</label> <br>
-      <input placeholder="Enter your Email" type="email">
+      <!-- <label>Email</label> <br> -->
+      <input class="estimate_form" placeholder="Enter your Email" type="email" required>
       <br>
-      <label>Phone</label> <br>
-      <tel placeholder="Enter your Phone Number" type="tel">
+      <!-- <label>Phone</label> <br> -->
+      <input class="estimate_form" placeholder="Enter your Phone Number" type="tel" required>
       <br>
-      <label>Company Name</label> <br>
-      <input placeholder="Enter your Company Name" type="text"> 
+      <!-- <label>Company Name</label> <br> -->
+      <!-- <input class="estimate_form" placeholder="Enter your Company Name" type="text">  -->
+      <!-- <br> -->
+      <!-- <label>What is your role?</label> <br> -->
+      <input class="estimate_form" placeholder="Enter your job position" type="text" required>
       <br>
-      <label>What is your role?</label> <br>
-      <input placeholder="Enter your job position" type="text">
-      <br>
-      <button class="estimate" id="estimate-btn">Email my Estimate</button>
+      <button class="estimate" id="estimate-btn">Email My Estimate</button>
       </div>
 
     </div>

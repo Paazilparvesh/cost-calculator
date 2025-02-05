@@ -1,127 +1,212 @@
 <head>
     <style>
-        /* styles.css */
-        body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f9f9f9;
-    }
-  
-  .container {
-    width: 80%;
-    margin: auto;
-    padding: 20px;
-  }
-  
-  .timeline-container {
-    margin: 20px 0;
-  }
-  
-  .timeline {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    width: 100%;
-  }
-  
-  .step {
-    text-align: center;
-    position: relative;
-    flex: 1;
-  }
-  
-  .step .circle {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background: lightgray;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    font-weight: bold;
-    transition: background 0.3s, transform 0.3s;
-  }
-  
-  .step.active .circle {
-    background: #007bff;
-    transform: scale(1.2);
-  }
-  
-  .step.completed .circle {
-    background: #28a745;
-  }
-  
-  .step .label {
-    margin-top: 10px;
-    font-size: 14px;
-  }
-  
-  .line {
-    height: 2px;
-    flex: 1;
-    background: lightgray;
-    margin-top: 13px;
-    transition: background 0.3s;
-  }
-  
-  .line.completed {
-    background: #28a745;
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
-  .calculator-navigation {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    border: none;
-    background: #007bff;
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  
-  button:hover {
-    background: #0056b3;
-  }
-  
-  button.disabled {
-    background: #cccccc;
-    cursor: not-allowed;
-  }
-   .title{
-    margin-top: 100px;
-    align-items: center;
-    text-align: center;
-    padding-bottom: 100px;
-   }
-   .estimate{
-    width: 90%;
-    align-items: center;
-   }
+      /* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  width: 100%;
+  height: 100%;
+
+}
+
+/* Basic Information   Step 1 */
+
+/* Step 1 Container */
+
+.container {
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+}
+
+/* heading for Website Cost Calculator */
+
+.header{
+display: flex;
+flex-direction: row; 
+justify-content:center;
+align-items: center;
+text-align: center;
+}
+
+
+.title{
+display: inline-block;
+align-items: center;
+text-align: center;
+}
+
+
+.selectable{
+margin: 10px 10px 10px 30px;
+}
+
+
+input[type="radio"] {
+accent-color: #B374ED;
+}
+
+
+select {
+accent-color: #B374ED;
+padding: 5px 0px 5px 5px;
+margin-left: 30px;
+}
+
+/* Select Features        Step 2 */
+
+input[type="checkbox"] {
+accent-color: #B374ED;
+}
+
+/* Email Estimation          Step 4 */
+
+.estimate_heading{
+margin: 50px 0px 20px 0px ;
+text-align: center;
+}
+
+.estimate_detail{
+margin: 20px 0px 40px 0px ;
+text-align: center;
+padding: 0px 120px 0px 120px; 
+}
+
+.estimate_form{
+padding: 10px 20px;
+margin: 10px 0px 5px 0px;
+width: 25%;
+border-radius: 15px;
+border: 1px solid #ccc;
+font-size: 20px;
+}
+
+.estimate_form:focus{
+outline:#cf9cff;
+border: #cf9cff 2px solid;
+}
+
+#step-4{
+text-align: center;
+}
+
+.estimate{
+margin: 30px 0px 0px 0px;
+width: 40%;
+align-items: center;
+font-size: 20px;
+}
+
+.timeline-container {
+  margin: 20px 0;
+}
+
+.timeline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.step {
+  text-align: center;
+  position: relative;
+  flex: 1;
+}
+
+.step .circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: lightgray;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20 auto;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.step.active .circle {
+  background: #cf9cff;
+  transform: scale(1.2);
+}
+
+.step.completed .circle {
+  background: #cf9cff;
+}
+
+.step .label {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.line {
+  height: 2px;
+  flex: 1;
+  background: lightgray;
+  margin-top: 13px;
+  transition: background 0.3s;
+}
+
+.line.completed {
+  background: #cf9cff;
+}
+
+.hidden {
+  display: none;
+}
+
+.calculator-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background: #cf9cff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #cf9cff;
+}
+
+button.disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+}
+
+.content_box{
+width: 100%;
+border-radius: 15px;
+padding: 20px 0px 20px 50px;
+margin: 20px 10px 20px 10px;
+background-color: #FAF5FE;
+}
     </style>
 </head>
 <body>
-    <div class="container">
-    <div>
+  <div class="container">
+    <div class="header">
       <h1 class="title">Website Cost Calculator</h1>
+      <br>
+      <h3>Calculate Your Websire Cost</h3>
     </div>
       <!-- Pagination Timeline 1-->
       <div class="timeline-container">
         <div class="timeline">
           <div class="step active">
-            <span class="circle">1</span>
+            <a href><span class="circle">1</span></a>
             <span class="label">Basic Information</span>
           </div>
           <!-- Pagination Timeline 2 -->
@@ -149,16 +234,16 @@
   
       <div id="step-content">
         <div class="step-content" id="step-1">
-          <div>
+          <div class="content_box">
             <h2>Are you looking for a new website or redesigning of an existing website?</h2>
-            <p class="error-message" id="errorMessage">Please fill in all required fields.</p>
+            <!-- <p class="error-message" id="errorMessage">Please fill in all required fields.</p> -->
             <input type="radio" name="radio0" class="selectable" value="100">New website design 
             <br>
             <input type="radio" name="radio0" class="selectable" value="100">Redesign of an existing website
           </div>
-          <div>
+          <div class="content_box">
             <h2>How many pages do you need?</h2>
-            <p class="error-message" id="errorMessage">Please fill in all required fields.</p>
+            <!-- <p class="error-message" id="errorMessage">Please fill in all required fields.</p> -->
             <select required>
               <option class="selectable" selected>select number of pages</option>
               <option class="selectable" value="100" >Single Page</option>
@@ -169,18 +254,18 @@
               <option class="selectable" value="100">UP to 100 pages</option>  
             </select>
           </div>
-          <div>
+          <div class="content_box">
             <h2>What style of UI/UX design do you prefer?</h2>
-            <p class="error-message" id="errorMessage">Please fill in all required fields.</p>
+            <!-- <p class="error-message" id="errorMessage">Please fill in all required fields.</p> -->
             <input type="radio" name="radio1" class="selectable" value="100" >Standard Design ()
             <br>
             <input type="radio" name="radio1" class="selectable" value="100">Advanced Design (₹₹)
             <br>
             <input type="radio" name="radio1" class="selectable" value="100">Custom UI/UX Design (₹₹₹) (100% Unique)
           </div>
-          <div>  
+          <div class="content_box">  
             <h2>Do you need eCommerce functionality on your website?</h2>
-            <p class="error-message" id="errorMessage">Please fill in all required fields.</p>
+            <!-- <p class="error-message" id="errorMessage">Please fill in all required fields.</p> -->
             <input type="radio" name="radio2" class="selectable" value="100">No
             <br>
             <input type="radio" name="radio2" class="selectable" value="100">Yes, Standard eCommerce
@@ -192,9 +277,9 @@
         <!-- 2.Select Features -->
   
         <div class="step-content hidden" id="step-2">
-          <div>
+          <div class="content_box">
             <h2 aria-required="true">Select the basic features you want on your website</h2>
-            <p class="error-message" id="errorMessage">Please fill in all required fields.</p>
+            <!-- <p class="error-message" id="errorMessage">Please fill in all required fields.</p> -->
             <input type="checkbox" name="radio3" class="selectable" value="100" >Image Gallery <br>
             <input type="checkbox" name="radio3" class="selectable" value="100" >Video Gallery <br>
             <input type="checkbox" name="radio3" class="selectable" value="100" >Live Chat <br>
@@ -205,9 +290,9 @@
             <input type="checkbox" name="radio3" class="selectable" value="100" >Social Media <br>
             <input type="checkbox" name="radio3" class="selectable" value="100" >Analytics & Tracking <br>
           </div>
-          <div>
+          <div class="content_box">
             <h2>Select the advanced features you want on your website</h2>
-            <p class="error-message" id="errorMessage">Please fill in all required fields.</p>
+            <!-- <p class="error-message" id="errorMessage">Please fill in all required fields.</p> -->
             <input type="checkbox" name="radio4" class="selectable" value="100">None <br>
             <input type="checkbox" name="radio4" class="selectable" value="100">Online Payment Gateway <br>
             <input type="checkbox" name="radio4" class="selectable" value="100">Chat Bot/ Lead Bot <br>
@@ -221,31 +306,31 @@
         <!-- 3.Additional Services -->
   
         <div class="step-content hidden" id="step-3">
-          <div>
+          <div class="content_box">
             <h2>Do you need Content Writing services for your website?</h2>
-            <p class="error-message" id="errorMessage">Please fill in all required fields.</p>
+            <!-- <p class="error-message" id="errorMessage">Please fill in all required fields.</p> -->
             <input type="radio" name="radio5" class="selectable" value="100">No, I'll provide the content <br>
             <input type="radio" name="radio5" class="selectable" value="100">Yes, Up to 5 Pages (2500 Words) <br>
             <input type="radio" name="radio5" class="selectable" value="100">Yes, Up to 10 Pages (5000 Words) <br>
             <input type="radio" name="radio5" class="selectable" value="100">Yes, Up to 25 Pages (12500 Words) <br>
           </div>
-          <div>
+          <div class="content_box">
             <h2>Do you need Stock Images for your website?</h2>
-            <p class="error-message" id="errorMessage">Please fill in all required fields.</p>
+            <!-- <p class="error-message" id="errorMessage">Please fill in all required fields.</p> -->
             <input type="radio" name="radio6" class="selectable" value="100">No, I'll provide the images <br>
             <input type="radio" name="radio6" class="selectable" value="100">Yes, Free stock images <br>
             <input type="radio" name="radio6" class="selectable" value="100">Yes, Premium stock images <br>
           </div>
-          <div>
+          <div class="content_box">
             <h2>Do you need Logo Design Service? </h2>
-            <p class="error-message" id="errorMessage">Please fill in all required fields.</p>
+            <!-- <p class="error-message" id="errorMessage">Please fill in all required fields.</p> -->
             <input type="radio" name="radio7" class="selectable" value="100">No, I'll provide the Logo <br>
             <input type="radio" name="radio7" class="selectable" value="100">Yes, Standard (Graphics Based) <br>
             <input type="radio" name="radio7" class="selectable" value="100">Yes, Premium (Sketch Based)<br>
           </div>
-          <div>
+          <div class="content_box">
             <h2>Do you need SEO services for your website? </h2>
-            <p class="error-message" id="errorMessage">Please fill in all required fields.</p>
+            <!-- <p class="error-message" id="errorMessage">Please fill in all required fields.</p> -->
             <input type="radio" name="radio8" class="selectable" value="100">No <br>
             <input type="radio" name="radio8" class="selectable" value="100">Yes, But SHO Setup Only <br>
             <input type="radio" name="radio8" class="selectable" value="100">Yes, I Need SEO 6 Months Plan <br>
@@ -254,29 +339,29 @@
   
         <!-- 4.Your Estimation -->
   
-        <div class="step-content hidden" id="step-2">
-          <h1>Your Estimate Is Ready</h1>
-          <p>Please provide your details in the fields below and
+        <div class="step-content hidden" id="step-4">
+          <h1 class="estimate_heading">Your Estimate Is Ready</h1>
+          <p class="\estimate_detail">Please provide your details in the fields below and
              then proceed to click on the "Email my Estimate" button. 
              A detailed estimate, based on the information you have provided, 
              will be instantly sent to your email address</p>
   
-        <label>Name</label> <br>
-        <input placeholder="Enter your Name" required >  
+        <!-- <label>Name</label> <br> -->
+        <input class="estimate_form" placeholder="Enter your Name" type="text" required>  
         <br>
-        <label>Email</label> <br>
-        <input placeholder="Enter your Email" required >
+        <!-- <label>Email</label> <br> -->
+        <input class="estimate_form" placeholder="Enter your Email" type="email" required>
         <br>
-        <label>Phone</label> <br>
-        <input placeholder="Enter your Phone Number" required >
+        <!-- <label>Phone</label> <br> -->
+        <input class="estimate_form" placeholder="Enter your Phone Number" type="tel" required>
         <br>
-        <label>Company Name</label> <br>
-        <input placeholder="Enter your Company Name" required >
+        <!-- <label>Company Name</label> <br> -->
+        <!-- <input class="estimate_form" placeholder="Enter your Company Name" type="text">  -->
+        <!-- <br> -->
+        <!-- <label>What is your role?</label> <br> -->
+        <input class="estimate_form" placeholder="Enter your job position" type="text" required>
         <br>
-        <label>What is your role?</label> <br>
-        <input placeholder="Enter your job position" required >
-        <br>
-        <button class="estimate" id="estimate-btn">Email my Estimate</button>
+        <button class="estimate" id="estimate-btn">Email My Estimate</button>
         </div>
   
       </div>
@@ -288,20 +373,24 @@
         <button id="next-btn">Next</button>
       </div>
       <div id="result"></div>
-    </div> 
+    </div>
     <script>
-        const steps = document.querySelectorAll(".step");
-        const lines = document.querySelectorAll(".line");
-        const nextBtn = document.getElementById("next-btn");
-        const prevBtn = document.getElementById("prev-btn");
-        const estimateBtn = document.getElementById("estimate-btn");
-        const stepContents = document.querySelectorAll(".step-content");
-        const resultDisplay = document.getElementById("result");
-        let currentStep = 0;
+      // Initialize EmailJS with your public key
+// emailjs.init("w5boYqdC71W0U2nt3");
 
-        function updatePagination() {
-              // Update step classes
-              steps.forEach((step, index) => {
+const steps = document.querySelectorAll(".step");
+const lines = document.querySelectorAll(".line");
+const nextBtn = document.getElementById("next-btn");
+const prevBtn = document.getElementById("prev-btn");
+const estimateBtn = document.getElementById("estimate-btn");
+const stepContents = document.querySelectorAll(".step-content");
+const resultDisplay = document.getElementById("result");
+
+let currentStep = 0;
+
+function updatePagination() {
+  // Update step classes
+  steps.forEach((step, index) => {
     step.classList.remove("active", "completed");
     if (index < currentStep) step.classList.add("completed");
     if (index === currentStep) step.classList.add("active");
@@ -353,6 +442,25 @@ prevBtn.addEventListener("click", () => {
 updatePagination();
 
 
+// function sendEmail() {
+//   const serviceID = "service_ud1v1oc"; // Replace with your EmailJS service ID
+//   const templateID = "__ejs-test-mail-service__"; // Replace with your EmailJS template ID
 
+//   const templateParams = {
+//       to_name: document.getElementById("to_name").value,
+//       to_email: document.getElementById("to_email").value,
+//       message: document.getElementById("message").value
+//   };
+
+//   emailjs.send(serviceID, templateID, templateParams)
+//       .then(response => {
+//           alert("Email sent successfully!");
+//           console.log("SUCCESS!", response);
+//       })
+//       .catch(error => {
+//           alert("Failed to send email.");
+//           console.error("ERROR:", error);
+//       });
+// }
     </script>
 </body>

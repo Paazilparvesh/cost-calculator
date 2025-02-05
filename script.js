@@ -1,3 +1,6 @@
+// Initialize EmailJS with your public key
+// emailjs.init("w5boYqdC71W0U2nt3");
+
 const steps = document.querySelectorAll(".step");
 const lines = document.querySelectorAll(".line");
 const nextBtn = document.getElementById("next-btn");
@@ -61,4 +64,31 @@ prevBtn.addEventListener("click", () => {
 // Initialize
 updatePagination();
 
+// Move to a specific step when clicking on a step circle
+steps.forEach((step, index) => {
+  step.addEventListener("click", () => {
+    currentStep = index;
+    updatePagination();
+  });
+});
 
+// function sendEmail() {
+//   const serviceID = "service_ud1v1oc"; // Replace with your EmailJS service ID
+//   const templateID = "__ejs-test-mail-service__"; // Replace with your EmailJS template ID
+
+//   const templateParams = {
+//       to_name: document.getElementById("to_name").value,
+//       to_email: document.getElementById("to_email").value,
+//       message: document.getElementById("message").value
+//   };
+
+//   emailjs.send(serviceID, templateID, templateParams)
+//       .then(response => {
+//           alert("Email sent successfully!");
+//           console.log("SUCCESS!", response);
+//       })
+//       .catch(error => {
+//           alert("Failed to send email.");
+//           console.error("ERROR:", error);
+//       });
+// }
